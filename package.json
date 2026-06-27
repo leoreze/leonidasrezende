@@ -1,0 +1,11 @@
+{
+  "name": "leonidasrezende-portfolio-landing",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install",
+    "dev": "npm --prefix backend run dev",
+    "start": "npm --prefix backend start",
+    "db:migrate": "npm --prefix backend run db:migrate"
+  }
+}
