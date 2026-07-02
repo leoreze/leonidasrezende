@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Marketplace | Leonidas Rezende</title>
+  <link rel="icon" href="/assets/lr-icon-dark.png">
+  <link rel="stylesheet" href="/marketplace.css">
+</head>
+<body class="admin-login-mode">
+  <div class="market-noise"></div>
+
+  <nav class="market-nav admin-topbar" id="adminTopbar">
+    <a class="market-brand" href="/admin">
+      <img src="/assets/lr-icon-transparent.png" alt="Leonidas Rezende">
+      <span>Admin Marketplace</span>
+    </a>
+    <div class="market-links">
+      <a href="/marketplace" target="_blank" rel="noopener">Ver marketplace</a>
+      <a href="/" target="_blank" rel="noopener">Landing</a>
+      <button type="button" class="market-btn ghost" id="logoutBtn" hidden>Sair</button>
+    </div>
+  </nav>
+
+  <main class="market-admin admin-shell">
+    <section id="loginView" class="admin-login-card">
+      <div class="admin-login-panel">
+        <img class="admin-login-logo" src="/assets/lr-icon-transparent.png" alt="Leonidas Rezende">
+        <span class="market-tag">Área restrita</span>
+        <div class="admin-login-copy">
+          <h1>Marketplace Leonidas Rezende</h1>
+        </div>
+        <p class="market-lead">Use e-mail e senha para gerenciar categorias, segmentos e templates do marketplace.</p>
+        <form id="loginForm" class="admin-login-form">
+          <label>E-mail
+            <input type="email" id="loginEmail" placeholder="seu@email.com" autocomplete="username" required>
+          </label>
+          <label>Senha
+            <input type="password" id="loginPassword" placeholder="Digite sua senha" autocomplete="current-password" required>
+          </label>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="adminView" hidden>
+      <div class="admin-hero">
+        <div>
+          <span class="market-tag">Painel de gestão</span>
+          <h1>Marketplace</h1>
+          <p class="market-lead">Cadastre categorias, segmentos e templates com live demo.</p>
+        </div>
+        <div class="admin-stats" id="adminStats"></div>
+      </div>
+
+      <div class="admin-tabs" role="tablist" aria-label="Áreas do admin">
+        <button type="button" class="active" data-tab="products">Categorias</button>
+        <button type="button" data-tab="segments">Segmentos</button>
+        <button type="button" data-tab="templates">Templates</button>
+      </div>
+
+      <section class="admin-panel" id="panel-segments">
+        <div class="admin-card">
+          <div class="admin-section-head">
+            <div>
+              <span class="market-tag">Segmentos</span>
+              <h2>Cadastrar segmentos do marketplace</h2>
+              <p>Exemplos: Apresentações, SaaS & Admin, IA & Consulting, Branding, UX/UI.</p>
+            </div>
+            <button type="button" class="market-btn ghost" data-clear="segmentForm">Novo segmento</button>
+          </div>
+          <form id="segmentForm" class="admin-grid admin-form">
+            <input type="hidden" id="segment_id">
+            <label>Nome do segmento<input id="segment_name" required placeholder="Presentation Templates"></label>
+            <label>Slug<input id="segment_slug" placeholder="presentation-templates"></label>
+            <label>Status<select id="segment_status"><option value="published">Publicado</option><option value="draft">Rascunho</option></select></label>
+            <textarea id="segment_description" placeholder="Descrição curta do segmento"></textarea>
+            <div class="admin-form-actions"><button type="submit">Salvar segmento</button></div>
+          </form>
+          <div class="admin-list" id="segmentsList"></div>
+        </div>
+      </section>
+
+      <section class="admin-panel active" id="panel-products">
+        <div class="admin-card">
+          <div class="admin-section-head">
+            <div>
+              <span class="market-tag">Categorias</span>
+              <h2>Cadastrar categorias do marketplace</h2>
+              <p>Use para organizar os templates por tipo de produto: apresentações, landing pages, dashboards, IA, branding e UX/UI.</p>
+            </div>
+            <button type="button" class="market-btn ghost" data-clear="productForm">Nova categoria</button>
+          </div>
+          <form id="productForm" class="admin-grid admin-form">
+            <input type="hidden" id="product_id">
+            <label>Título<input id="product_title" required placeholder="Landing Pages Premium"></label>
+            <label>Slug<input id="product_slug" required placeholder="landing-pages-premium"></label>
+            <label>Status<select id="product_status"><option value="published">Publicado</option><option value="draft">Rascunho</option></select></label>
+            <textarea id="product_description" placeholder="Descrição curta da categoria"></textarea>
+            <div class="admin-form-actions"><button type="submit">Salvar categoria</button></div>
+          </form>
+          <div class="admin-list" id="productsList"></div>
+        </div>
+      </section>
+
+      <section class="admin-panel" id="panel-templates">
+        <div class="admin-card">
+          <div class="admin-section-head">
+            <div>
+              <span class="market-tag">Templates</span>
+              <h2>Cadastrar templates com live demo</h2>
+              <p>Use para templates com preview, demo responsiva, download e botão de compra.</p>
+            </div>
+            <button type="button" class="market-btn ghost" data-clear="templateForm">Novo template</button>
+          </div>
+          <form id="templateForm" class="admin-grid admin-form">
+            <input type="hidden" id="template_id">
+            <label>Título<input id="template_title" required></label>
+            <label>Slug<input id="template_slug" required placeholder="meu-template-premium"></label>
+            <label>Categoria<select id="template_category" required></select></label>
+            <label>Preço<input id="template_price" inputmode="numeric" placeholder="US$ 29"></label>
+            <label>Status<select id="template_status"><option value="published">Publicado</option><option value="draft">Rascunho</option></select></label>
+            <label>Badge<input id="template_badge" placeholder="New, Premium, Live"></label>
+            <label>Capa / cover URL
+              <input id="template_cover" placeholder="/assets/minha-capa.jpg">
+              <span class="admin-upload-row">
+                <input type="file" id="template_cover_file" accept="image/*">
+                <button type="button" class="market-btn ghost" data-upload="template_cover">Enviar imagem</button>
+              </span>
+              <small class="admin-upload-hint" id="template_cover_hint">Cole uma URL ou envie uma imagem.</small>
+            </label>
+            <label>Preview / demo URL
+              <input id="template_preview" placeholder="/templates/meu-template/index.html">
+              <span class="admin-upload-row">
+                <input type="file" id="template_zip_file" accept=".zip,application/zip,application/x-zip-compressed">
+                <button type="button" class="market-btn ghost" id="templateZipUploadBtn">Enviar ZIP e gerar live demo</button>
+              </span>
+              <small class="admin-upload-hint" id="template_zip_hint">Envie o ZIP do template. O sistema descompacta e preenche a demo automaticamente.</small>
+            </label>
+            <label>Buy URL<input id="template_buyUrl" placeholder="https://..."></label>
+            <label>Download URL<input id="template_downloadUrl" placeholder="https://..."></label>
+            <textarea id="template_description" placeholder="Descrição curta do template"></textarea>
+            <label>Features, separadas por vírgula<input id="template_features" placeholder="Responsive, Clean UI, Documentation"></label>
+            <label>Formatos, separados por vírgula<input id="template_formats" placeholder="HTML, CSS, JS"></label>
+            <div class="admin-form-actions"><button type="submit">Salvar template</button></div>
+          </form>
+          <div class="admin-list" id="templatesList"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="admin-login-footer">
+    2026 © Leonidas Rezende. Todos os direitos reservados.
+  </footer>
+
+  <script src="/admin-templates.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F4EFE6"/>
+  <circle cx="1360" cy="120" r="260" fill="#1F6FEB" fill-opacity="0.12"/>
+  <circle cx="140" cy="810" r="260" fill="#D6B268" fill-opacity="0.22"/>
+  <rect x="110" y="88" width="1380" height="724" rx="52" fill="white" stroke="#DFD7CB" stroke-width="2"/>
+  <image href="logo-mark.svg" x="180" y="160" width="82" height="82"/>
+  <text x="290" y="207" fill="#0D1321" font-family="Inter, Arial" font-size="52" font-weight="900">Northstar One</text>
+  <text x="290" y="252" fill="#536078" font-family="Inter, Arial" font-size="30" font-weight="600">Premium Responsive Landing Page Template</text>
+  <text x="180" y="412" fill="#0D1321" font-family="Inter, Arial" font-size="84" font-weight="900">Editorial landing</text>
+  <text x="180" y="505" fill="#1F6FEB" font-family="Inter, Arial" font-size="84" font-weight="900">for premium launches.</text>
+  <text x="180" y="588" fill="#536078" font-family="Inter, Arial" font-size="34" font-weight="500">HTML • CSS • Vanilla JS • Documentation</text>
+  <rect x="180" y="650" width="270" height="70" rx="35" fill="#0D1321"/>
+  <text x="230" y="695" fill="#F4EFE6" font-family="Inter, Arial" font-size="28" font-weight="800">Premium Template</text>
+  <rect x="814" y="194" width="574" height="430" rx="46" fill="#F4EFE6" stroke="#DFD7CB" stroke-width="2"/>
+  <rect x="866" y="246" width="170" height="24" rx="12" fill="#0D1321"/>
+  <rect x="866" y="310" width="350" height="34" rx="17" fill="#0D1321"/>
+  <rect x="866" y="370" width="300" height="18" rx="9" fill="#748094"/>
+  <rect x="866" y="405" width="258" height="18" rx="9" fill="#B3B9C3"/>
+  <rect x="866" y="470" width="156" height="54" rx="27" fill="#1F6FEB"/>
+  <rect x="1048" y="470" width="156" height="54" rx="27" fill="#FFFFFF" stroke="#D8C8AA" stroke-width="2"/>
+  <rect x="1244" y="310" width="96" height="96" rx="24" fill="#D6B268"/>
+  <path d="M1292 330V386M1264 358H1320" stroke="#0D1321" stroke-width="12" stroke-linecap="round"/>
+</svg>

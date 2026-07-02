@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentação — VittaCare Clinic Landing Page Template</title>
+  <style>
+    :root {
+      --primary: #0F766E;
+      --secondary: #14B8A6;
+      --accent: #8B5CF6;
+      --bg: #F7FBFA;
+      --surface: #FFFFFF;
+      --text: #0B2230;
+      --muted: #60756F;
+      --border: #D8E7E4;
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      padding: 72px 24px;
+      background:
+        radial-gradient(circle at top right, rgba(20,184,166,.22), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(139,92,246,.18), transparent 34%),
+        #071C24;
+      color: white;
+    }
+    .container { width: min(100% - 32px, 980px); margin-inline: auto; }
+    .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 34px; font-weight: 900; }
+    .brand img { width: 44px; height: 44px; }
+    h1 { margin: 0 0 16px; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: .98; letter-spacing: -.06em; }
+    h2 { margin-top: 54px; font-size: clamp(1.7rem, 4vw, 2.5rem); letter-spacing: -.04em; }
+    h3 { margin-top: 30px; }
+    p { color: var(--muted); }
+    header p { color: #C5DAD6; max-width: 720px; font-size: 1.1rem; }
+    main { padding: 48px 0 88px; }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 18px 0;
+      box-shadow: 0 12px 34px rgba(7,28,36,.07);
+    }
+    code, pre {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      background: #ECFDF9;
+      color: #0F766E;
+      border-radius: 10px;
+    }
+    code { padding: 3px 7px; }
+    pre { padding: 18px; overflow: auto; }
+    ul { padding-left: 22px; }
+    li + li { margin-top: 7px; }
+    table { width: 100%; border-collapse: collapse; background: white; overflow: hidden; border-radius: var(--radius); }
+    th, td { padding: 14px 16px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+    th { background: #ECFDF9; color: var(--primary); }
+    .callout {
+      padding: 18px 20px;
+      border-left: 4px solid var(--secondary);
+      background: white;
+      border-radius: 16px;
+    }
+    a { color: var(--primary); font-weight: 800; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="../assets/img/logo-mark.svg" alt="">
+        <span>VittaCare Clinic Landing Page Template</span>
+      </div>
+      <h1>Documentação do Template</h1>
+      <p>Guia completo para instalar, editar, personalizar e publicar a landing page premium para clínicas, consultórios e negócios de saúde.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>1. O que está incluso</h2>
+      <ul>
+        <li>Landing page completa em <strong>HTML5 semântico</strong>.</li>
+        <li>CSS moderno com variáveis, grid responsivo, componentes e animações.</li>
+        <li>JavaScript puro para menu mobile, FAQ, tabs, modal, validação e toast.</li>
+        <li>Assets SVG editáveis: logo, mockup e capa OG.</li>
+        <li>Documentação em HTML e README.md.</li>
+        <li>Copy comercial para Behance, Patreon, Gumroad e marketplaces.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Estrutura de pastas</h2>
+      <pre><code>/index.html
+/assets/css/style.css
+/assets/js/main.js
+/assets/img/logo-mark.svg
+/assets/img/hero-mockup.svg
+/assets/img/og-cover.svg
+/docs/documentation.html
+/README.md</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>3. Como abrir o projeto</h2>
+      <p>Você pode abrir o arquivo <code>index.html</code> diretamente no navegador. Para uma visualização mais fiel, use um servidor local.</p>
+      <pre><code>npx serve .
+# ou
+python -m http.server 8000</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>4. Como trocar textos</h2>
+      <p>Todos os textos principais ficam no arquivo <code>index.html</code>. Procure pelas seções:</p>
+      <ul>
+        <li><code>&lt;section class="hero"&gt;</code> para título principal, subtítulo e CTAs.</li>
+        <li><code>#beneficios</code> para cards de benefícios.</li>
+        <li><code>#especialidades</code> para tabs e serviços.</li>
+        <li><code>#planos</code> para preços, pacotes e ofertas.</li>
+        <li><code>#faq</code> para perguntas frequentes.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Como trocar cores</h2>
+      <p>Abra <code>assets/css/style.css</code> e edite as variáveis no bloco <code>:root</code>.</p>
+      <table>
+        <thead>
+          <tr><th>Variável</th><th>Uso</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>--color-primary</code></td><td>Cor principal da marca.</td></tr>
+          <tr><td><code>--color-secondary</code></td><td>Cor de destaque para botões e elementos visuais.</td></tr>
+          <tr><td><code>--color-accent</code></td><td>Cor complementar para gradientes e detalhes.</td></tr>
+          <tr><td><code>--color-bg</code></td><td>Fundo geral da página.</td></tr>
+          <tr><td><code>--color-text</code></td><td>Texto principal.</td></tr>
+          <tr><td><code>--color-muted</code></td><td>Textos secundários.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>6. Como trocar imagens</h2>
+      <p>Substitua os arquivos em <code>assets/img/</code> mantendo o mesmo nome, ou altere os caminhos no HTML:</p>
+      <ul>
+        <li><code>logo-mark.svg</code> — símbolo da marca.</li>
+        <li><code>hero-mockup.svg</code> — mockup visual do hero.</li>
+        <li><code>og-cover.svg</code> — imagem de compartilhamento e capa comercial.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>7. Componentes reutilizáveis</h2>
+      <p>Classes principais:</p>
+      <ul>
+        <li><code>.btn</code>, <code>.btn-primary</code>, <code>.btn-secondary</code>, <code>.btn-ghost</code></li>
+        <li><code>.section</code>, <code>.section-header</code>, <code>.container</code>, <code>.grid</code></li>
+        <li><code>.card</code>, <code>.benefit-card</code>, <code>.feature-card</code>, <code>.pricing-card</code></li>
+        <li><code>.badge</code>, <code>.tag</code>, <code>.faq-item</code>, <code>.cta-box</code></li>
+        <li><code>.tabs</code>, <code>.modal</code>, <code>.toast</code></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>8. Como duplicar ou remover seções</h2>
+      <p>Para duplicar, copie o bloco completo de uma <code>&lt;section&gt;</code> no <code>index.html</code>. Para remover, apague a seção e remova o respectivo link do menu, se existir.</p>
+      <div class="callout">Mantenha IDs únicos. Exemplo: se duplicar <code>id="planos"</code>, altere para <code>id="pacotes"</code>.</div>
+    </section>
+
+    <section class="card">
+      <h2>9. JavaScript</h2>
+      <p>O arquivo <code>assets/js/main.js</code> contém funções separadas e comentadas para:</p>
+      <ul>
+        <li>Menu mobile abre/fecha.</li>
+        <li>Header com sombra ao rolar.</li>
+        <li>Animação de entrada com Intersection Observer.</li>
+        <li>FAQ accordion.</li>
+        <li>Tabs de especialidades.</li>
+        <li>Modal de apresentação.</li>
+        <li>Máscara simples de telefone.</li>
+        <li>Validação de formulário e toast.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>10. Publicação</h2>
+      <h3>GitHub Pages</h3>
+      <ol>
+        <li>Crie um repositório.</li>
+        <li>Envie todos os arquivos.</li>
+        <li>Ative Pages em Settings → Pages.</li>
+      </ol>
+      <h3>Netlify ou Vercel</h3>
+      <ol>
+        <li>Faça upload da pasta ou conecte o repositório.</li>
+        <li>Não precisa de build command.</li>
+        <li>Diretório de publicação: raiz do projeto.</li>
+      </ol>
+      <h3>Render</h3>
+      <p>Use Static Site e defina a pasta raiz como diretório de publicação.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Licença sugerida</h2>
+      <p>Sugestão para vender o produto:</p>
+      <ul>
+        <li><strong>Personal License:</strong> uso em 1 projeto pessoal.</li>
+        <li><strong>Commercial License:</strong> uso em projetos de clientes.</li>
+        <li><strong>Extended License:</strong> uso em múltiplos projetos, sem revenda direta do template original.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>12. Checklist antes de vender</h2>
+      <ul>
+        <li>Testar responsividade no mobile, tablet e desktop.</li>
+        <li>Trocar imagens e textos fictícios por exemplos comerciais finais.</li>
+        <li>Criar 3 a 5 mockups para Behance.</li>
+        <li>Exportar capa 3200 × 1800 px.</li>
+        <li>Adicionar licença e termos de uso.</li>
+        <li>Compactar a pasta em ZIP.</li>
+        <li>Publicar preview online.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

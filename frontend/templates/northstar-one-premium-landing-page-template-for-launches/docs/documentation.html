@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentation — Northstar One Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--primary:#0D1321;--accent:#D6B268;--blue:#1F6FEB;--bg:#F4EFE6;--surface:#fff;--border:#DED4C5;--muted:#5F6B7C;--radius:24px}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--primary);line-height:1.7}a{color:inherit}.container{width:min(1040px,calc(100% - 40px));margin:auto}.hero{padding:80px 0 42px;border-bottom:1px solid var(--border);background:radial-gradient(circle at 85% 10%,rgba(31,111,235,.12),transparent 28%)}.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(3rem,7vw,6rem);line-height:.9;margin:20px 0}.hero p{font-size:1.15rem;color:var(--muted);max-width:760px}.badge{display:inline-flex;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:var(--surface);font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.75rem}.layout{display:grid;grid-template-columns:260px 1fr;gap:38px;padding:42px 0 80px}.toc{position:sticky;top:20px;align-self:start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}.toc a{display:block;text-decoration:none;font-weight:800;color:var(--muted);margin:10px 0}.toc a:hover{color:var(--primary)}section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:20px}h2{font-size:2rem;line-height:1.05;letter-spacing:-.04em;margin:0 0 14px}h3{margin:24px 0 8px}code,pre{background:#F8F4ED;border:1px solid var(--border);border-radius:12px}code{padding:2px 6px}pre{padding:16px;overflow:auto}ul{padding-left:20px}.callout{background:#0D1321;color:#F4EFE6}.callout p{color:#D7DCE6}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{border:1px solid var(--border);border-radius:18px;padding:16px;background:#F8F4ED}@media(max-width:850px){.layout{grid-template-columns:1fr}.toc{position:static}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Documentation</span>
+      <h1>Northstar One Template</h1>
+      <p>Guia completo para instalar, editar, personalizar e publicar o template premium responsivo Northstar One.</p>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="toc">
+      <strong>Índice</strong>
+      <a href="#start">Instalação</a>
+      <a href="#structure">Estrutura</a>
+      <a href="#customize">Personalização</a>
+      <a href="#components">Componentes</a>
+      <a href="#publish">Publicação</a>
+      <a href="#sell">Venda</a>
+      <a href="#checklist">Checklist</a>
+    </aside>
+
+    <div>
+      <section id="start">
+        <h2>1. Como instalar e abrir</h2>
+        <p>Não há dependências obrigatórias. Basta baixar o ZIP, extrair a pasta e abrir o arquivo <code>index.html</code> no navegador.</p>
+        <pre><code>northstar-one-landing-template/
+├── index.html
+├── assets/css/style.css
+├── assets/js/main.js
+├── assets/img/
+├── docs/documentation.html
+└── README.md</code></pre>
+        <p>Para editar, use VS Code, Cursor, WebStorm ou qualquer editor de texto.</p>
+      </section>
+
+      <section id="structure">
+        <h2>2. Estrutura de arquivos</h2>
+        <ul>
+          <li><strong>index.html:</strong> página principal e conteúdo editável.</li>
+          <li><strong>style.css:</strong> variáveis, layout, responsividade e componentes.</li>
+          <li><strong>main.js:</strong> menu mobile, tabs, accordion, modal, toast, formulário e animações.</li>
+          <li><strong>assets/img:</strong> logo, mockup SVG e imagem OG.</li>
+          <li><strong>docs/documentation.html:</strong> documentação visual.</li>
+          <li><strong>README.md:</strong> guia rápido + conteúdo comercial.</li>
+        </ul>
+      </section>
+
+      <section id="customize">
+        <h2>3. Como personalizar</h2>
+        <h3>Trocar textos</h3>
+        <p>Abra <code>index.html</code> e edite títulos, descrições, CTAs, depoimentos, preços e perguntas frequentes.</p>
+        <h3>Trocar cores</h3>
+        <p>No início do <code>style.css</code>, altere as variáveis:</p>
+        <pre><code>:root {
+  --color-primary: #0D1321;
+  --color-secondary: #1F6FEB;
+  --color-accent: #D6B268;
+  --color-bg: #F4EFE6;
+}</code></pre>
+        <h3>Trocar imagens</h3>
+        <p>Substitua os SVGs em <code>assets/img</code> ou aponte as tags <code>&lt;img&gt;</code> para novas imagens.</p>
+        <h3>Alterar CTAs</h3>
+        <p>Procure por <code>Get the template</code>, <code>Comprar template</code>, <code>Ver preview</code> e edite os textos ou links.</p>
+      </section>
+
+      <section id="components">
+        <h2>4. Componentes reutilizáveis</h2>
+        <div class="grid">
+          <div class="card"><strong>.btn</strong><br>Botões base, dark, light, outline e quiet.</div>
+          <div class="card"><strong>.feature-tile</strong><br>Cards editoriais de benefícios.</div>
+          <div class="card"><strong>.tabs</strong><br>Tabs com JavaScript puro.</div>
+          <div class="card"><strong>.faq-item</strong><br>Accordion acessível para FAQ.</div>
+          <div class="card"><strong>.price-card</strong><br>Cards de preço com plano destacado.</div>
+          <div class="card"><strong>.lead-form</strong><br>Formulário com validação simples.</div>
+          <div class="card"><strong>.modal</strong><br>Modal opcional para preview.</div>
+          <div class="card"><strong>.toast</strong><br>Alerta visual para feedback.</div>
+        </div>
+      </section>
+
+      <section id="publish">
+        <h2>5. Como publicar</h2>
+        <h3>GitHub Pages</h3>
+        <p>Suba os arquivos para um repositório e ative Pages em Settings → Pages.</p>
+        <h3>Netlify</h3>
+        <p>Arraste a pasta do template para o painel do Netlify ou conecte o repositório.</p>
+        <h3>Vercel</h3>
+        <p>Importe o repositório. Como o projeto é estático, não precisa de build command.</p>
+        <h3>Render</h3>
+        <p>Use Static Site e defina a pasta raiz como diretório público.</p>
+      </section>
+
+      <section id="sell">
+        <h2>6. Sugestão de venda</h2>
+        <p>Nome comercial: <strong>Northstar One — Premium Responsive Landing Page Template</strong>.</p>
+        <ul>
+          <li>Preço promocional: US$ 19</li>
+          <li>Preço padrão: US$ 39</li>
+          <li>Preço com mockups e variações: US$ 59</li>
+          <li>Bundle com outros templates: US$ 99 a US$ 149</li>
+        </ul>
+      </section>
+
+      <section id="checklist" class="callout">
+        <h2>7. Checklist final</h2>
+        <ul>
+          <li>Editar nome, descrição e links.</li>
+          <li>Trocar imagens e preview OG.</li>
+          <li>Testar responsividade no mobile.</li>
+          <li>Testar formulário, FAQ, modal e tabs.</li>
+          <li>Compactar em ZIP com README e documentação.</li>
+          <li>Criar mockups e publicar no Behance/Patreon/Gumroad.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

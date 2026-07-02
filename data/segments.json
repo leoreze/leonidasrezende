@@ -1,0 +1,26 @@
+[
+  {
+    "id": "seg-saas-admin",
+    "name": "SaaS & Admin",
+    "slug": "saas-admin",
+    "description": "Templates para dashboards, sistemas administrativos e produtos SaaS.",
+    "status": "published",
+    "cover": "/templates/commandcenter-pro-admin-template/assets/img/og-cover.svg"
+  },
+  {
+    "id": "seg-ai-consulting",
+    "name": "AI & Consulting",
+    "slug": "ai-consulting",
+    "description": "Decks, propostas e templates para consultoria, IA, automação e inovação.",
+    "status": "published",
+    "cover": "/assets/hero-full-banner.png"
+  },
+  {
+    "id": "seg-presentations",
+    "name": "Presentation Templates",
+    "slug": "presentation-templates",
+    "description": "Apresentações premium para vendas, pitch decks, consultorias e portfólios.",
+    "status": "published",
+    "cover": "/assets/mockup-portfolio.png"
+  }
+]

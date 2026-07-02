@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CommandCenter Pro — Premium Admin Dashboard Template</title>
+  <meta name="description" content="Premium responsive admin dashboard template built with HTML, CSS and vanilla JavaScript. Includes analytics cards, charts, tables, kanban, command palette, modals and documentation.">
+  <meta name="keywords" content="admin template, dashboard template, HTML CSS JavaScript, SaaS admin, CRM dashboard, analytics dashboard, responsive admin UI">
+  <meta name="author" content="CommandCenter Pro Template">
+  <meta property="og:title" content="CommandCenter Pro — Premium Admin Dashboard Template">
+  <meta property="og:description" content="Responsive admin dashboard template with premium UI, reusable components and documentation.">
+  <meta property="og:image" content="assets/img/og-cover.svg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to dashboard</a>
+
+  <div class="app-shell" data-shell>
+    <aside class="sidebar" data-sidebar aria-label="Main navigation">
+      <div class="sidebar-header">
+        <a href="#overview" class="brand" aria-label="CommandCenter Pro">
+          <img src="assets/img/logo-mark.svg" alt="" class="brand-mark">
+          <span>
+            <strong>CommandCenter</strong>
+            <small>Pro Admin</small>
+          </span>
+        </a>
+        <button class="icon-btn ghost mobile-only" type="button" data-sidebar-close aria-label="Close sidebar">×</button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-link active" href="#overview"><span>⌘</span> Overview</a>
+        <a class="nav-link" href="#analytics"><span>◌</span> Analytics</a>
+        <a class="nav-link" href="#projects"><span>□</span> Projects</a>
+        <a class="nav-link" href="#pipeline"><span>↗</span> Pipeline</a>
+        <a class="nav-link" href="#customers"><span>◎</span> Customers</a>
+        <p class="nav-label">Operations</p>
+        <a class="nav-link" href="#tasks"><span>✓</span> Tasks</a>
+        <a class="nav-link" href="#reports"><span>▤</span> Reports</a>
+        <a class="nav-link" href="#settings"><span>⚙</span> Settings</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <span class="badge success">Pro</span>
+        <h3>Launch-ready admin UI</h3>
+        <p>Reusable components for SaaS, CRM, finance and operations dashboards.</p>
+        <button class="btn btn-primary full" type="button" data-modal-open>View kit</button>
+      </div>
+    </aside>
+
+    <div class="page">
+      <header class="topbar" data-header>
+        <div class="topbar-left">
+          <button class="icon-btn mobile-only" type="button" data-sidebar-toggle aria-label="Open sidebar">☰</button>
+          <div>
+            <p class="eyebrow">Executive dashboard</p>
+            <h1>Command Center</h1>
+          </div>
+        </div>
+
+        <div class="topbar-search" role="search">
+          <span>⌕</span>
+          <input type="search" placeholder="Search metrics, reports, customers..." aria-label="Search dashboard">
+          <kbd>⌘K</kbd>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-btn" type="button" data-command-open aria-label="Open command palette">⌘</button>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
+          <button class="icon-btn" type="button" data-notification aria-label="Notifications">
+            ◔<span class="notification-dot"></span>
+          </button>
+          <div class="user-chip">
+            <span class="avatar">AR</span>
+            <span class="desktop-only">Avery Ross</span>
+          </div>
+        </div>
+      </header>
+
+      <main id="main" class="main-content">
+        <section class="hero-panel reveal" id="overview">
+          <div class="hero-copy">
+            <span class="badge">Premium admin template</span>
+            <h2>Operate products, revenue and teams from one elegant dashboard.</h2>
+            <p>CommandCenter Pro is a polished admin template for SaaS platforms, CRMs, marketplaces, finance tools and internal business operations.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button" data-toast-trigger>Export report</button>
+              <button class="btn btn-secondary" type="button" data-modal-open>Preview components</button>
+            </div>
+          </div>
+          <div class="hero-preview" aria-hidden="true">
+            <img src="assets/img/dashboard-preview.svg" alt="">
+          </div>
+        </section>
+
+        <section class="metrics-grid reveal" aria-label="Key metrics">
+          <article class="metric-card card">
+            <span class="metric-icon teal">↗</span>
+            <p>Total revenue</p>
+            <strong>$284.7K</strong>
+            <small class="positive">+18.4% this month</small>
+          </article>
+          <article class="metric-card card">
+            <span class="metric-icon blue">◎</span>
+            <p>Active users</p>
+            <strong>42,918</strong>
+            <small class="positive">+9.2% growth</small>
+          </article>
+          <article class="metric-card card">
+            <span class="metric-icon amber">◈</span>
+            <p>Conversion rate</p>
+            <strong>12.8%</strong>
+            <small class="positive">+3.1% vs last week</small>
+          </article>
+          <article class="metric-card card">
+            <span class="metric-icon violet">◌</span>
+            <p>Open tickets</p>
+            <strong>184</strong>
+            <small class="negative">-24 resolved today</small>
+          </article>
+        </section>
+
+        <section class="dashboard-grid" id="analytics">
+          <article class="card chart-card reveal">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">Revenue intelligence</p>
+                <h3>Performance trend</h3>
+              </div>
+              <div class="segmented" data-chart-tabs>
+                <button class="active" data-chart="revenue" type="button">Revenue</button>
+                <button data-chart="users" type="button">Users</button>
+                <button data-chart="profit" type="button">Profit</button>
+              </div>
+            </div>
+            <canvas id="revenueChart" width="900" height="360" aria-label="Revenue chart"></canvas>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">Health score</p>
+                <h3>System status</h3>
+              </div>
+              <span class="badge success">Stable</span>
+            </div>
+            <div class="radial" style="--value: 87">
+              <span>87%</span>
+            </div>
+            <div class="status-list">
+              <div><span class="dot green"></span> API latency <strong>42ms</strong></div>
+              <div><span class="dot blue"></span> Uptime <strong>99.98%</strong></div>
+              <div><span class="dot amber"></span> Queue load <strong>Medium</strong></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid secondary-grid">
+          <article class="card table-card reveal" id="customers">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">Customers</p>
+                <h3>Top accounts</h3>
+              </div>
+              <button class="btn btn-secondary btn-sm" type="button">View all</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Status</th>
+                    <th>Plan</th>
+                    <th>MRR</th>
+                    <th>Health</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Northline Labs</strong><span>Fintech platform</span></td>
+                    <td><span class="pill success">Active</span></td>
+                    <td>Enterprise</td>
+                    <td>$18,400</td>
+                    <td><meter value="86" min="0" max="100">86%</meter></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Aurora Studio</strong><span>Creative ops</span></td>
+                    <td><span class="pill warning">Review</span></td>
+                    <td>Business</td>
+                    <td>$7,920</td>
+                    <td><meter value="63" min="0" max="100">63%</meter></td>
+                  </tr>
+                  <tr>
+                    <td><strong>MetricHouse</strong><span>Data suite</span></td>
+                    <td><span class="pill success">Active</span></td>
+                    <td>Scale</td>
+                    <td>$11,240</td>
+                    <td><meter value="92" min="0" max="100">92%</meter></td>
+                  </tr>
+                  <tr>
+                    <td><strong>BluePeak AI</strong><span>Automation</span></td>
+                    <td><span class="pill danger">Risk</span></td>
+                    <td>Startup</td>
+                    <td>$3,160</td>
+                    <td><meter value="41" min="0" max="100">41%</meter></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="card reveal" id="pipeline">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">Pipeline</p>
+                <h3>Deal stages</h3>
+              </div>
+              <span class="badge">$412K</span>
+            </div>
+            <div class="pipeline-list">
+              <div class="pipeline-item">
+                <span>Qualified</span><strong>36%</strong><i style="width:36%"></i>
+              </div>
+              <div class="pipeline-item">
+                <span>Proposal</span><strong>28%</strong><i style="width:28%"></i>
+              </div>
+              <div class="pipeline-item">
+                <span>Negotiation</span><strong>21%</strong><i style="width:21%"></i>
+              </div>
+              <div class="pipeline-item">
+                <span>Closed</span><strong>15%</strong><i style="width:15%"></i>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="kanban-section reveal" id="projects">
+          <div class="section-header inline">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h3>Operational board</h3>
+            </div>
+            <button class="btn btn-primary btn-sm" type="button" data-toast-trigger>New project</button>
+          </div>
+          <div class="kanban-board">
+            <article class="kanban-column">
+              <h4>Backlog <span>4</span></h4>
+              <div class="task-card"><span class="tag teal">Research</span><strong>Competitor benchmark</strong><p>Map product gaps for the Q3 roadmap.</p></div>
+              <div class="task-card"><span class="tag blue">UX</span><strong>Settings audit</strong><p>Improve discoverability for account controls.</p></div>
+            </article>
+            <article class="kanban-column">
+              <h4>In progress <span>3</span></h4>
+              <div class="task-card"><span class="tag amber">Analytics</span><strong>MRR dashboard</strong><p>Finalize executive reports and CSV export.</p></div>
+              <div class="task-card"><span class="tag violet">Design</span><strong>Component polish</strong><p>Review empty states, tables and mobile cards.</p></div>
+            </article>
+            <article class="kanban-column">
+              <h4>Review <span>2</span></h4>
+              <div class="task-card"><span class="tag green">Frontend</span><strong>Command palette</strong><p>Keyboard flow and accessible focus states.</p></div>
+            </article>
+            <article class="kanban-column">
+              <h4>Done <span>8</span></h4>
+              <div class="task-card"><span class="tag teal">Docs</span><strong>Template guide</strong><p>Usage, deployment and customization notes.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="dashboard-grid secondary-grid" id="tasks">
+          <article class="card reveal">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">Today</p>
+                <h3>Priority tasks</h3>
+              </div>
+              <span class="badge success">6 items</span>
+            </div>
+            <div class="checklist" data-checklist>
+              <label><input type="checkbox" checked> Review retention cohort anomalies</label>
+              <label><input type="checkbox"> Prepare stakeholder summary</label>
+              <label><input type="checkbox"> Audit onboarding conversion drop</label>
+              <label><input type="checkbox"> Update billing status report</label>
+              <label><input type="checkbox"> Approve dashboard component states</label>
+            </div>
+          </article>
+
+          <article class="card reveal" id="reports">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">Activity</p>
+                <h3>Timeline</h3>
+              </div>
+            </div>
+            <div class="timeline">
+              <div><span></span><strong>Report generated</strong><p>Executive summary exported 12 minutes ago.</p></div>
+              <div><span></span><strong>New account added</strong><p>Aurora Studio moved into proposal stage.</p></div>
+              <div><span></span><strong>Incident resolved</strong><p>API queue returned to normal operation.</p></div>
+              <div><span></span><strong>Design update</strong><p>Pricing cards and empty states approved.</p></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="settings-panel card reveal" id="settings">
+          <div>
+            <p class="eyebrow">Template system</p>
+            <h3>Reusable components included</h3>
+            <p>Buttons, badges, cards, tables, chart canvas, sidebar, topbar, toast, modal, command palette, kanban, timeline, forms and responsive grids.</p>
+          </div>
+          <div class="component-cloud" aria-label="Included components">
+            <span>Sidebar</span><span>Topbar</span><span>Cards</span><span>Charts</span><span>Tables</span><span>Kanban</span><span>Modal</span><span>Toast</span><span>Palette</span><span>Forms</span>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="overlay" data-overlay></div>
+
+  <section class="command-palette" data-command aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="command-title">
+    <div class="command-box">
+      <div class="command-search">
+        <span>⌘</span>
+        <input type="search" placeholder="Type a command or search a section..." aria-label="Command search" data-command-input>
+        <button type="button" data-command-close aria-label="Close command palette">×</button>
+      </div>
+      <h2 id="command-title" class="sr-only">Command palette</h2>
+      <div class="command-list">
+        <button type="button" data-target="#overview">Go to Overview <kbd>O</kbd></button>
+        <button type="button" data-target="#analytics">Open Analytics <kbd>A</kbd></button>
+        <button type="button" data-target="#projects">View Projects <kbd>P</kbd></button>
+        <button type="button" data-target="#customers">Open Customers <kbd>C</kbd></button>
+        <button type="button" data-theme-toggle>Toggle Theme <kbd>T</kbd></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" data-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close modal">×</button>
+      <span class="badge">Component kit</span>
+      <h2 id="modal-title">Premium admin components ready to reuse.</h2>
+      <p>Use this modal for onboarding tours, detail previews, account actions or upgrade prompts.</p>
+      <div class="modal-grid">
+        <div><strong>32+</strong><span>UI blocks</span></div>
+        <div><strong>0</strong><span>Frameworks</span></div>
+        <div><strong>100%</strong><span>Responsive</span></div>
+      </div>
+      <button class="btn btn-primary full" type="button" data-modal-close>Continue</button>
+    </div>
+  </section>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "cat-html5",
+    "slug": "html5-website-templates",
+    "title": "HTML5 Website Templates",
+    "status": "published",
+    "description": "Templates HTML, CSS e JavaScript com live demo para sites, dashboards e landing pages."
+  },
+  {
+    "id": "cat-presentations",
+    "slug": "presentation-templates",
+    "title": "Presentation Templates",
+    "status": "published",
+    "description": "Templates premium para pitch decks, propostas comerciais, consultorias e apresentações institucionais."
+  },
+  {
+    "id": "cat-landing-pages",
+    "slug": "landing-page-templates",
+    "title": "Landing Page Templates",
+    "status": "published",
+    "description": "Modelos de landing pages para captação, vendas, lançamentos e produtos digitais."
+  },
+  {
+    "id": "cat-dashboards",
+    "slug": "dashboard-templates",
+    "title": "Dashboard Templates",
+    "status": "published",
+    "description": "Interfaces administrativas, dashboards SaaS e painéis de gestão prontos para personalizar."
+  },
+  {
+    "id": "cat-ai-kits",
+    "slug": "ai-template-kits",
+    "title": "AI Template Kits",
+    "status": "published",
+    "description": "Kits para consultores, automações, IA aplicada, propostas e produtos de inteligência artificial."
+  },
+  {
+    "id": "cat-branding",
+    "slug": "branding-kits",
+    "title": "Branding Kits",
+    "status": "draft",
+    "description": "Kits de identidade visual, brand guidelines, moodboards e apresentações de marca."
+  },
+  {
+    "id": "cat-uiux",
+    "slug": "ux-ui-kits",
+    "title": "UX/UI Kits",
+    "status": "draft",
+    "description": "UI kits, wireframes, user flows, design systems e templates de case study."
+  }
+]

@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#080D18"/>
+  <circle cx="1340" cy="120" r="310" fill="#2DD4BF" fill-opacity="0.18"/>
+  <circle cx="80" cy="820" r="280" fill="#38BDF8" fill-opacity="0.14"/>
+  <rect x="112" y="110" width="1376" height="680" rx="56" fill="#0B1220" stroke="white" stroke-opacity="0.12"/>
+  <rect x="176" y="176" width="92" height="92" rx="26" fill="url(#g)"/>
+  <text x="302" y="224" fill="white" font-family="Arial, sans-serif" font-size="56" font-weight="800">CommandCenter Pro</text>
+  <text x="302" y="272" fill="#94A3B8" font-family="Arial, sans-serif" font-size="34" font-weight="600">Premium Admin Dashboard Template</text>
+  <text x="176" y="430" fill="white" font-family="Arial, sans-serif" font-size="84" font-weight="900">Executive dashboards</text>
+  <text x="176" y="526" fill="#2DD4BF" font-family="Arial, sans-serif" font-size="84" font-weight="900">for serious products.</text>
+  <text x="176" y="604" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="34">HTML • CSS • Vanilla JS • Docs • Components</text>
+  <rect x="176" y="664" width="302" height="70" rx="35" fill="#2DD4BF"/>
+  <text x="224" y="709" fill="#06101F" font-family="Arial, sans-serif" font-size="30" font-weight="800">Premium Template</text>
+  <rect x="878" y="188" width="500" height="512" rx="44" fill="#101A2E" stroke="white" stroke-opacity="0.12"/>
+  <rect x="920" y="230" width="416" height="74" rx="22" fill="white" fill-opacity="0.08"/>
+  <rect x="946" y="258" width="184" height="18" rx="9" fill="white" fill-opacity="0.7"/>
+  <rect x="1200" y="251" width="104" height="32" rx="16" fill="#2DD4BF"/>
+  <rect x="920" y="334" width="118" height="112" rx="24" fill="white" fill-opacity="0.08"/>
+  <rect x="1068" y="334" width="118" height="112" rx="24" fill="white" fill-opacity="0.08"/>
+  <rect x="1216" y="334" width="118" height="112" rx="24" fill="white" fill-opacity="0.08"/>
+  <path d="M946 628C984 566 1015 584 1048 536C1084 482 1128 594 1166 516C1197 452 1236 496 1280 452" stroke="url(#line)" stroke-width="10" stroke-linecap="round"/>
+  <rect x="920" y="478" width="416" height="186" rx="30" fill="white" fill-opacity="0.06"/>
+  <defs>
+    <linearGradient id="g" x1="176" y1="176" x2="268" y2="268" gradientUnits="userSpaceOnUse"><stop stop-color="#38BDF8"/><stop offset=".55" stop-color="#2DD4BF"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+    <linearGradient id="line" x1="946" y1="628" x2="1280" y2="452" gradientUnits="userSpaceOnUse"><stop stop-color="#38BDF8"/><stop offset=".55" stop-color="#2DD4BF"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+  </defs>
+</svg>

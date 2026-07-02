@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1600" height="900" fill="#071C24"/>
+<circle cx="1280" cy="148" r="330" fill="#14B8A6" fill-opacity=".22"/>
+<circle cx="266" cy="808" r="300" fill="#8B5CF6" fill-opacity=".20"/>
+<rect x="116" y="96" width="1368" height="708" rx="54" fill="white" fill-opacity=".06" stroke="white" stroke-opacity=".16"/>
+<rect x="180" y="170" width="92" height="92" rx="28" fill="url(#g)"/>
+<text x="296" y="210" fill="white" font-family="Inter,Arial,sans-serif" font-size="44" font-weight="800">VittaCare</text>
+<text x="296" y="252" fill="#BFE7E1" font-family="Inter,Arial,sans-serif" font-size="24">Clinic Landing Page Template</text>
+<text x="180" y="384" fill="white" font-family="Inter,Arial,sans-serif" font-size="80" font-weight="900">Premium Healthcare</text>
+<text x="180" y="474" fill="#5EEAD4" font-family="Inter,Arial,sans-serif" font-size="80" font-weight="900">Landing Page</text>
+<text x="180" y="548" fill="#CBDED9" font-family="Inter,Arial,sans-serif" font-size="28">HTML • CSS • Vanilla JS • Documentation • Reusable components</text>
+<rect x="180" y="622" width="290" height="68" rx="34" fill="#14B8A6"/>
+<text x="230" y="666" fill="#062A2F" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="900">Premium Template</text>
+<rect x="710" y="182" width="606" height="454" rx="42" fill="white" stroke="#E5F2EF"/>
+<rect x="768" y="244" width="224" height="30" rx="15" fill="#0B2230"/>
+<rect x="768" y="298" width="376" height="16" rx="8" fill="#8AA5A1"/>
+<rect x="768" y="330" width="300" height="16" rx="8" fill="#B8CBC8"/>
+<rect x="768" y="388" width="170" height="54" rx="27" fill="#14B8A6"/>
+<rect x="1014" y="394" width="210" height="174" rx="28" fill="#0F766E"/>
+<circle cx="1118" cy="458" r="42" fill="#CCFBF1"/>
+<path d="M1118 438v40M1098 458h40" stroke="#0F766E" stroke-width="10" stroke-linecap="round"/>
+<rect x="768" y="514" width="180" height="120" rx="24" fill="#F1FFFD" stroke="#C9F4EE"/>
+<rect x="972" y="514" width="180" height="120" rx="24" fill="#FAF8FF" stroke="#E8DEFF"/>
+<defs>
+<linearGradient id="g" x1="180" y1="170" x2="272" y2="262" gradientUnits="userSpaceOnUse"><stop stop-color="#0F766E"/><stop offset=".48" stop-color="#14B8A6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+</defs>
+</svg>

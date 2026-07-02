@@ -1,0 +1,31 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#08131F"/>
+  <circle cx="1300" cy="120" r="260" fill="#16B8A6" fill-opacity="0.18"/>
+  <circle cx="180" cy="790" r="280" fill="#4353FF" fill-opacity="0.22"/>
+  <rect x="116" y="94" width="1368" height="712" rx="56" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.12"/>
+  <rect x="180" y="170" width="92" height="92" rx="28" fill="url(#g1)"/>
+  <path d="M205 235C217 215 227 202 237 195C246 188 256 187 264 187" stroke="white" stroke-width="13" stroke-linecap="round"/>
+  <path d="M205 198H236" stroke="white" stroke-width="10" stroke-linecap="round"/>
+  <text x="296" y="210" fill="white" font-family="Inter, Arial" font-size="46" font-weight="800">LivrePro</text>
+  <text x="296" y="254" fill="#C7D4E8" font-family="Inter, Arial" font-size="26" font-weight="500">Landing Page Template for Independent Professionals</text>
+  <text x="180" y="392" fill="white" font-family="Inter, Arial" font-size="86" font-weight="900">Premium Professional</text>
+  <text x="180" y="488" fill="#65F0DA" font-family="Inter, Arial" font-size="86" font-weight="900">Landing Page</text>
+  <text x="180" y="558" fill="#C7D4E8" font-family="Inter, Arial" font-size="30" font-weight="500">HTML • CSS • Vanilla JS • Documentation • README</text>
+  <rect x="180" y="622" width="290" height="68" rx="34" fill="#16B8A6"/>
+  <text x="230" y="665" fill="#08131F" font-family="Inter, Arial" font-size="23" font-weight="800">Premium Template</text>
+  <rect x="740" y="182" width="580" height="460" rx="48" fill="white"/>
+  <rect x="804" y="242" width="224" height="28" rx="14" fill="#08131F"/>
+  <rect x="804" y="300" width="370" height="16" rx="8" fill="#9AABBC"/>
+  <rect x="804" y="338" width="302" height="16" rx="8" fill="#C1CCD8"/>
+  <rect x="804" y="402" width="176" height="54" rx="27" fill="#16B8A6"/>
+  <rect x="1012" y="402" width="176" height="54" rx="27" fill="#F5F7FB" stroke="#D8E1EC"/>
+  <rect x="804" y="510" width="188" height="122" rx="28" fill="#EBFAF8" stroke="#BFECE5"/>
+  <rect x="1024" y="510" width="188" height="122" rx="28" fill="#F7F3FF" stroke="#E3D8FF"/>
+  <defs>
+    <linearGradient id="g1" x1="180" y1="170" x2="272" y2="262" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4353FF"/>
+      <stop offset="0.55" stop-color="#16B8A6"/>
+      <stop offset="1" stop-color="#F7C873"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CommandCenter Pro — Documentation</title>
+  <style>
+    :root{--bg:#F6F7FB;--surface:#fff;--text:#0B1220;--muted:#64748B;--border:#E2E8F0;--primary:#2DD4BF;--secondary:#38BDF8;--accent:#F59E0B;--navy:#0B1220;--radius:22px;--shadow:0 16px 44px rgba(15,23,42,.08)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 90% -10%,rgba(45,212,191,.18),transparent 34%),var(--bg);line-height:1.7} a{color:inherit} code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace} .layout{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:28px;background:var(--navy);color:#fff;overflow:auto}.brand{display:flex;gap:12px;align-items:center;margin-bottom:28px}.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--secondary),var(--primary),var(--accent));display:grid;place-items:center;font-weight:900}.brand strong{display:block}.brand span{color:#94A3B8;font-size:13px}.sidebar a{display:block;padding:10px 12px;border-radius:12px;color:#CBD5E1;text-decoration:none;font-weight:700}.sidebar a:hover{background:rgba(255,255,255,.08);color:#fff}.content{padding:36px;max-width:1120px}.hero{padding:40px;border-radius:32px;background:var(--surface);box-shadow:var(--shadow);border:1px solid var(--border);margin-bottom:24px}.hero h1{margin:0;font-size:clamp(36px,6vw,74px);line-height:.95;letter-spacing:-.07em}.hero p{max-width:760px;color:var(--muted);font-size:18px}.badge{display:inline-flex;padding:6px 10px;border-radius:999px;background:#CCFBF1;color:#064E3B;font-weight:900;font-size:12px;margin-bottom:18px}.section{padding:28px;border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow);border:1px solid var(--border);margin-bottom:18px}.section h2{margin:0 0 14px;font-size:30px;letter-spacing:-.04em}.section h3{margin:20px 0 8px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{padding:16px;border:1px solid var(--border);border-radius:16px;background:#F8FAFC}pre{padding:16px;overflow:auto;border-radius:16px;background:#0B1220;color:#E2E8F0}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:12px;border-bottom:1px solid var(--border);text-align:left}.table th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.footer{color:var(--muted);font-size:14px;padding:18px 0 40px}@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:relative;height:auto}.content{padding:18px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="mark">A</div><div><strong>CommandCenter Pro</strong><span>Documentation</span></div></div>
+      <a href="#overview">Overview</a>
+      <a href="#install">Install</a>
+      <a href="#structure">File structure</a>
+      <a href="#customize">Customization</a>
+      <a href="#components">Components</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#deployment">Deployment</a>
+      <a href="#selling">Selling checklist</a>
+      <a href="../index.html">Open template</a>
+    </aside>
+
+    <main class="content">
+      <section class="hero" id="overview">
+        <span class="badge">Premium Admin Template</span>
+        <h1>CommandCenter Pro documentation.</h1>
+        <p>CommandCenter Pro is a premium responsive admin dashboard template built with semantic HTML, modern CSS and vanilla JavaScript. It is designed for SaaS products, CRMs, analytics platforms, internal tools, finance dashboards, operations panels and marketplace back offices.</p>
+      </section>
+
+      <section class="section" id="install">
+        <h2>1. How to install</h2>
+        <p>No build step is required. The template uses only HTML, CSS and vanilla JavaScript.</p>
+        <pre><code>commandcenter-pro-admin-template/
+├── index.html
+├── assets/css/style.css
+├── assets/js/main.js
+├── assets/img/
+├── docs/documentation.html
+└── README.md</code></pre>
+        <h3>Open locally</h3>
+        <p>Double-click <code>index.html</code> or open the folder with a local server.</p>
+        <pre><code>python -m http.server 8080</code></pre>
+      </section>
+
+      <section class="section" id="structure">
+        <h2>2. File structure</h2>
+        <table class="table">
+          <thead><tr><th>File</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><code>index.html</code></td><td>Main admin dashboard page with sidebar, topbar, metrics, charts, tables, kanban, modal and command palette.</td></tr>
+            <tr><td><code>assets/css/style.css</code></td><td>Complete visual system, responsive layout, variables, cards, states and components.</td></tr>
+            <tr><td><code>assets/js/main.js</code></td><td>Sidebar, theme switcher, chart canvas, modal, toast, command palette, checklist and reveal animations.</td></tr>
+            <tr><td><code>assets/img/</code></td><td>SVG logo, dashboard preview and Open Graph cover.</td></tr>
+            <tr><td><code>docs/documentation.html</code></td><td>This documentation page.</td></tr>
+            <tr><td><code>README.md</code></td><td>Installation guide, product description and commercial copy.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="customize">
+        <h2>3. Customization</h2>
+        <div class="grid">
+          <div class="card"><h3>Change colors</h3><p>Edit the CSS variables at the top of <code>assets/css/style.css</code>.</p></div>
+          <div class="card"><h3>Change texts</h3><p>Edit headings, labels and cards directly inside <code>index.html</code>.</p></div>
+          <div class="card"><h3>Change logo</h3><p>Replace <code>assets/img/logo-mark.svg</code> with your own SVG, PNG or WebP asset.</p></div>
+          <div class="card"><h3>Change sections</h3><p>Duplicate, remove or reorder dashboard sections in <code>index.html</code>.</p></div>
+        </div>
+        <pre><code>:root {
+  --color-primary: #2DD4BF;
+  --color-secondary: #38BDF8;
+  --color-accent: #F59E0B;
+  --color-bg: #080D18;
+  --color-surface: #0B1220;
+  --color-text: #F8FAFC;
+}</code></pre>
+      </section>
+
+      <section class="section" id="components">
+        <h2>4. Included components</h2>
+        <ul>
+          <li>Responsive sidebar navigation</li>
+          <li>Sticky topbar</li>
+          <li>Search field and command palette</li>
+          <li>Metric cards</li>
+          <li>Canvas chart</li>
+          <li>Radial status indicator</li>
+          <li>Data table</li>
+          <li>Pipeline progress list</li>
+          <li>Kanban board</li>
+          <li>Checklist</li>
+          <li>Timeline</li>
+          <li>Badges, tags and pills</li>
+          <li>Modal dialog</li>
+          <li>Toast notification</li>
+          <li>Dark/light theme switcher</li>
+        </ul>
+      </section>
+
+      <section class="section" id="javascript">
+        <h2>5. JavaScript features</h2>
+        <p>The template uses vanilla JavaScript only. Main functions are documented with clear selectors and modular helpers.</p>
+        <ul>
+          <li>Sidebar open/close on mobile</li>
+          <li>Command palette with keyboard shortcut <code>Ctrl/⌘ + K</code></li>
+          <li>Theme switcher with <code>localStorage</code></li>
+          <li>Canvas chart with tab switching</li>
+          <li>Modal and overlay behavior</li>
+          <li>Toast notification</li>
+          <li>Intersection Observer reveal animations</li>
+        </ul>
+      </section>
+
+      <section class="section" id="deployment">
+        <h2>6. Publishing</h2>
+        <h3>GitHub Pages</h3>
+        <p>Push the project to a GitHub repository and enable GitHub Pages from the repository settings.</p>
+        <h3>Netlify / Vercel</h3>
+        <p>Drag and drop the folder or connect your Git repository. No build command is required.</p>
+        <h3>Render / Static hosting</h3>
+        <p>Deploy as a static site and set the publish directory to the project root.</p>
+      </section>
+
+      <section class="section" id="selling">
+        <h2>7. Checklist before selling</h2>
+        <ul>
+          <li>Replace placeholder company data if needed.</li>
+          <li>Export polished mockups for Behance and marketplace covers.</li>
+          <li>Confirm all links, buttons and navigation anchors.</li>
+          <li>Test on desktop, tablet and mobile.</li>
+          <li>Validate contrast and readability in both dark and light modes.</li>
+          <li>Zip the package with README, docs and assets.</li>
+          <li>Define the license: personal, commercial, extended or agency use.</li>
+        </ul>
+      </section>
+
+      <p class="footer">© CommandCenter Pro Admin Template. Documentation included for digital product distribution.</p>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tpl-commandcenter-pro",
+    "slug": "commandcenter-pro-admin-template",
+    "title": "CommandCenter Pro — Premium Admin Template",
+    "segment": "SaaS & Admin",
+    "category": "HTML5 Website Templates",
+    "price": "US$ 29",
+    "badge": "New",
+    "description": "A premium futuristic admin dashboard template for SaaS products, agencies, automation tools and digital platforms.",
+    "cover": "/templates/commandcenter-pro-admin-template/assets/img/og-cover.svg",
+    "preview": "/templates/commandcenter-pro-admin-template/index.html",
+    "features": [
+      "Responsive HTML5",
+      "Premium dashboard UI",
+      "Documentation included",
+      "Clean CSS/JS"
+    ],
+    "formats": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PDF Documentation"
+    ],
+    "status": "published",
+    "buyUrl": "https://leonidasrezende.com.br/marketplace",
+    "downloadUrl": "#"
+  },
+  {
+    "id": "tpl-ai-strategy-deck",
+    "slug": "ai-strategy-deck-template",
+    "title": "AI Strategy Deck Template",
+    "segment": "AI & Consulting",
+    "category": "Presentation Templates",
+    "price": "US$ 39",
+    "badge": "Coming soon",
+    "description": "Presentation deck structure for consultants selling AI strategy, automation and innovation projects.",
+    "cover": "/assets/hero-full-banner.png",
+    "preview": "/assets/hero-full-banner.png",
+    "features": [
+      "PowerPoint structure",
+      "Consulting storyline",
+      "AI proposal sections",
+      "Premium visual direction"
+    ],
+    "formats": [
+      "PPTX",
+      "Google Slides",
+      "Canva",
+      "PDF Preview"
+    ],
+    "status": "draft",
+    "buyUrl": "#",
+    "downloadUrl": "#"
+  }
+]

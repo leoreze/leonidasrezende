@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentação — LivrePro Landing Page Template</title>
+  <meta name="description" content="Documentação do template LivrePro para profissionais liberais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #16b8a6;
+      --secondary: #4353ff;
+      --accent: #f7c873;
+      --bg: #f7f8fc;
+      --surface: #ffffff;
+      --text: #0d1b2a;
+      --muted: #64748b;
+      --border: #dde3f0;
+      --dark: #08131f;
+      --radius: 22px;
+      --shadow: 0 18px 52px rgba(13, 27, 42, .10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    a { color: var(--primary); font-weight: 800; text-decoration: none; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    code { background: #edf2f7; padding: .2em .45em; border-radius: 8px; }
+    pre { background: var(--dark); color: #fff; padding: 18px; border-radius: 18px; overflow: auto; }
+    .container { width: min(100% - 32px, 1080px); margin-inline: auto; }
+    .hero {
+      padding: 74px 0;
+      color: #fff;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(67, 83, 255, .34), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(22, 184, 166, .28), transparent 28%),
+        linear-gradient(135deg, #08131f, #0d2830);
+    }
+    .hero h1 { margin: 0 0 16px; font-size: clamp(2.4rem, 7vw, 5rem); line-height: .95; letter-spacing: -.07em; }
+    .hero p { max-width: 760px; margin: 0; color: rgba(255,255,255,.74); font-size: 1.1rem; }
+    .pill { display: inline-flex; margin-bottom: 22px; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.12); color: #dffaf6; font-weight: 850; font-size: .82rem; }
+    .layout { display: grid; grid-template-columns: 260px 1fr; gap: 28px; align-items: start; padding: 36px 0 80px; }
+    aside { position: sticky; top: 20px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    aside a { display: block; padding: 10px 12px; border-radius: 12px; color: var(--muted); }
+    aside a:hover { background: var(--bg); color: var(--text); }
+    main { display: grid; gap: 22px; }
+    section { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+    section h2 { margin: 0 0 14px; font-size: 1.9rem; letter-spacing: -.05em; line-height: 1.12; }
+    section h3 { margin: 26px 0 10px; letter-spacing: -.03em; }
+    section p, li { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .card { padding: 18px; border: 1px solid var(--border); border-radius: 18px; background: var(--bg); }
+    .card strong { display: block; color: var(--text); margin-bottom: 6px; }
+    .checklist li { margin-bottom: 8px; }
+    .footer { padding: 36px 0; color: var(--muted); text-align: center; }
+    @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } aside { position: static; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="pill">Documentação do Template</span>
+      <h1>LivrePro — Professional Landing Page Template</h1>
+      <p>Guia completo para instalar, editar, customizar e publicar a landing page premium para profissionais liberais.</p>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside aria-label="Índice da documentação">
+      <a href="#visao-geral">Visão geral</a>
+      <a href="#estrutura">Estrutura de arquivos</a>
+      <a href="#instalacao">Instalação</a>
+      <a href="#customizacao">Customização</a>
+      <a href="#componentes">Componentes</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#publicacao">Publicação</a>
+      <a href="#venda">Venda do produto</a>
+      <a href="#checklist">Checklist</a>
+    </aside>
+
+    <main>
+      <section id="visao-geral">
+        <h2>1. Visão geral</h2>
+        <p><strong>LivrePro</strong> é uma landing page premium criada para profissionais liberais, consultores, advogados, arquitetos, terapeutas, coaches, designers, contadores, personal trainers, educadores e especialistas independentes.</p>
+        <p>O objetivo do template é apresentar autoridade, diferenciais, serviços, método de trabalho, prova social, planos e formulário de contato em uma estrutura responsiva, moderna e fácil de customizar.</p>
+      </section>
+
+      <section id="estrutura">
+        <h2>2. Estrutura de arquivos</h2>
+        <pre><code>/index.html
+/assets/css/style.css
+/assets/js/main.js
+/assets/img/logo-mark.svg
+/assets/img/hero-mockup.svg
+/assets/img/og-cover.svg
+/docs/documentation.html
+/README.md</code></pre>
+        <p>Todos os arquivos são estáticos e podem ser editados em qualquer editor de código, como VS Code, Cursor, Sublime Text ou WebStorm.</p>
+      </section>
+
+      <section id="instalacao">
+        <h2>3. Como instalar e abrir</h2>
+        <ol>
+          <li>Baixe e descompacte o arquivo ZIP.</li>
+          <li>Abra a pasta do projeto no editor de código.</li>
+          <li>Clique duas vezes em <code>index.html</code> para abrir no navegador.</li>
+          <li>Para desenvolvimento local, use uma extensão como Live Server no VS Code.</li>
+        </ol>
+        <pre><code>profissionais-liberais-landing-template/
+└── index.html</code></pre>
+      </section>
+
+      <section id="customizacao">
+        <h2>4. Como customizar</h2>
+        <h3>Trocar textos</h3>
+        <p>Edite diretamente o arquivo <code>index.html</code>. Procure pelos títulos, subtítulos, CTAs, serviços, planos e depoimentos.</p>
+        <h3>Trocar cores</h3>
+        <p>Abra <code>assets/css/style.css</code> e altere as variáveis CSS no início do arquivo:</p>
+        <pre><code>:root {
+  --color-primary: #16b8a6;
+  --color-secondary: #4353ff;
+  --color-accent: #f7c873;
+  --color-bg: #f7f8fc;
+  --color-surface: #ffffff;
+  --color-text: #0d1b2a;
+  --color-muted: #64748b;
+  --color-border: #dde3f0;
+}</code></pre>
+        <h3>Trocar imagens</h3>
+        <p>Substitua os arquivos dentro de <code>assets/img/</code>. Mantenha nomes iguais ou atualize os caminhos no HTML.</p>
+        <h3>Alterar CTAs</h3>
+        <p>Procure por textos como <code>Agendar diagnóstico</code>, <code>Agendar conversa</code> e <code>Solicitar proposta</code> no <code>index.html</code>.</p>
+        <h3>Duplicar ou remover seções</h3>
+        <p>Cada bloco está organizado como <code>&lt;section class="section"&gt;</code>. Para duplicar, copie a seção completa. Para remover, apague o bloco da abertura ao fechamento.</p>
+      </section>
+
+      <section id="componentes">
+        <h2>5. Componentes reutilizáveis</h2>
+        <div class="grid">
+          <div class="card"><strong>Botões</strong><code>.btn</code>, <code>.btn-primary</code>, <code>.btn-secondary</code>, <code>.btn-ghost</code></div>
+          <div class="card"><strong>Cards</strong><code>.card</code>, <code>.benefit-card</code>, <code>.feature-card</code>, <code>.pricing-card</code></div>
+          <div class="card"><strong>Grid</strong><code>.grid</code>, <code>.grid-3</code>, <code>.container</code></div>
+          <div class="card"><strong>FAQ</strong><code>.faq-item</code>, <code>.faq-question</code>, <code>.faq-answer</code></div>
+          <div class="card"><strong>Tabs</strong><code>[data-tabs]</code>, <code>[data-tab]</code>, <code>[data-tab-panel]</code></div>
+          <div class="card"><strong>Modal e Toast</strong><code>[data-modal]</code>, <code>[data-toast]</code></div>
+        </div>
+      </section>
+
+      <section id="javascript">
+        <h2>6. JavaScript implementado</h2>
+        <p>O arquivo <code>assets/js/main.js</code> contém interações em JavaScript puro:</p>
+        <ul>
+          <li>Menu mobile abre/fecha.</li>
+          <li>Header com efeito ao rolar.</li>
+          <li>Scroll suave para âncoras.</li>
+          <li>FAQ accordion acessível.</li>
+          <li>Tabs para tipos de serviço.</li>
+          <li>Modal de apresentação.</li>
+          <li>Toast de confirmação.</li>
+          <li>Validação simples de formulário.</li>
+          <li>Animações com Intersection Observer.</li>
+        </ul>
+      </section>
+
+      <section id="publicacao">
+        <h2>7. Como publicar</h2>
+        <h3>GitHub Pages</h3>
+        <ol>
+          <li>Crie um repositório no GitHub.</li>
+          <li>Envie todos os arquivos do template.</li>
+          <li>Vá em Settings → Pages.</li>
+          <li>Escolha a branch principal e publique.</li>
+        </ol>
+        <h3>Netlify</h3>
+        <ol>
+          <li>Acesse o painel do Netlify.</li>
+          <li>Arraste a pasta do projeto para deploy.</li>
+          <li>O site será publicado automaticamente.</li>
+        </ol>
+        <h3>Vercel</h3>
+        <ol>
+          <li>Importe o repositório.</li>
+          <li>Como é um site estático, não precisa configurar build.</li>
+          <li>Publique diretamente.</li>
+        </ol>
+        <h3>Render</h3>
+        <ol>
+          <li>Crie um Static Site.</li>
+          <li>Conecte o repositório.</li>
+          <li>Use a pasta raiz como publicação.</li>
+        </ol>
+      </section>
+
+      <section id="venda">
+        <h2>8. Produto para venda</h2>
+        <p><strong>Nome comercial:</strong> LivrePro — Professional Services Landing Page Template</p>
+        <p><strong>Preço sugerido:</strong> US$ 29 como preço principal. Com mockups, variações e licença comercial, pode chegar a US$ 49–79.</p>
+        <p><strong>Licença sugerida:</strong> uso pessoal e comercial para projetos finais de clientes. Revenda do template original apenas mediante licença extendida.</p>
+      </section>
+
+      <section id="checklist">
+        <h2>9. Checklist antes de vender</h2>
+        <ul class="checklist">
+          <li>Trocar nome fictício da marca, se necessário.</li>
+          <li>Gerar mockups para Behance, Gumroad, Patreon ou Creative Market.</li>
+          <li>Testar responsividade em mobile, tablet e desktop.</li>
+          <li>Validar links e CTAs.</li>
+          <li>Atualizar imagens de preview.</li>
+          <li>Revisar licença e termos de uso.</li>
+          <li>Comprimir o ZIP final.</li>
+          <li>Criar capa hero 3200×1800 para Behance.</li>
+          <li>Adicionar screenshots e roteiro visual do case.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">© 2026 LivrePro Template — Documentation</div>
+  </footer>
+</body>
+</html>
